@@ -81,25 +81,26 @@
     }
 
     .carousel-item {
-        
-        align-items: center; /* 垂直居中 */
+
+        align-items: center;
+        /* 垂直居中 */
         // background-size: cover;
         // background-position: center 0;
         text-align: center;
         justify-content: center;
         align-items: center;
-        
 
-        
 
-            img {
-                
-                 vertical-align: middle;
-                width: 100%;
-                // max-width: 100%;
-                height: auto;
-            }
-        
+
+
+        img {
+
+            vertical-align: middle;
+            width: 100%;
+            // max-width: 100%;
+            height: auto;
+        }
+
     }
 
     // .carousel-item:nth-child(1) {
@@ -135,25 +136,6 @@
             margin-bottom: 10px;
             height: 200px;
             overflow: hidden;
-            // & img:hover {
-            //     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-            // }
-            // a {
-            //     // 块级的宽度和父级一样大
-            //     display: block;
-            //     height: 200px;
-            //     background-color: white;
-            //     border-radius: 4px;
-
-            // }
-            //添加图片放大功能//暂时不能使用
-            .photo {
-                transition: transform 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
 
             .title {
                 text-align: left;
@@ -183,8 +165,18 @@
                 }
             }
         }
+        .photo {
+            transition: transform 0.3s ease;
+            cursor: pointer; 
+        
+        }
+        
+        .box a:hover .photo {
+            transform: scale(1.15);
+            /* 将图片放大到原来的1.15倍 */
+        }
     }
-
+    
     .button {
         height: 5vh;
         width: 16vh;
@@ -198,7 +190,15 @@
             background-color: #d1d2d4;
         }
     }
-
-
-
 }
+
+// .photo {
+//     transition: transform 0.3s ease;
+
+
+// }
+
+// .box a:hover .photo {
+//     transform: scale(1.15);
+//     /* 将图片放大到原来的1.1倍 */
+// }

@@ -75,7 +75,6 @@
   width: 100%;
   height: auto;
 }
-
 .project {
   margin-top: 60px;
   text-align: center;
@@ -88,12 +87,6 @@
   margin-bottom: 10px;
   height: 200px;
   overflow: hidden;
-}
-.project .row div .photo {
-  transition: transform 0.3s ease;
-}
-.project .row div .photo:hover {
-  transform: scale(1.1);
 }
 .project .row div .title {
   text-align: left;
@@ -118,6 +111,14 @@
 }
 .project .row div .mask:hover {
   opacity: 1;
+}
+.project .row .photo {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.project .row .box a:hover .photo {
+  transform: scale(1.15);
+  /* 将图片放大到原来的1.15倍 */
 }
 .project .button {
   height: 5vh;
